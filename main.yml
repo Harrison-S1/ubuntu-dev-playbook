@@ -1,6 +1,6 @@
 ---                                                                             
                                                                                  
-- hosts: dev                                                                    
+- hosts: localhost                                                                    
   become: true                                                                  
                                                                                  
   pre_tasks:                                                                                                                
