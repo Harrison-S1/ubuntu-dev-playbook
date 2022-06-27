@@ -8,7 +8,7 @@
      timezone:                                                                  
       name: Europe/London                                                       
  
-   - name: install updates (Debian)
+   - name: install updates (Ubuntu)
      tags: always
      apt:
        upgrade: dist
