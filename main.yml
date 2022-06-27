@@ -17,5 +17,5 @@
 
   roles:
     - updateos
-    - firewall
+#    - firewall
     - os_hardening                                                                             
