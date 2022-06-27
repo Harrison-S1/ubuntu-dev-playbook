@@ -1,42 +1,42 @@
 ---
 
    - name: Install debsums.
-     apt:
+     package:
        name: debsums
        state: latest
 
-   - name: Install apt-show-versions.
-     apt:
+   - name: Install package-show-versions.
+     package:
        name: apt-show-versions
        state: latest
 
    - name: Install libpam-cracklib.
-     apt:
+     package:
        name: libpam-cracklib
        state: latest
 
    - name: Install rkhunter scanners.
-     apt:
+     package:
        name: rkhunter
        state: latest
 
    - name: Install chkrootkit scanners.
-     apt:
+     package:
        name: chkrootkit
        state: latest
 
    - name: Install auditd.
-     apt:
+     package:
        name: auditd
        state: latest
 
    - name: Install auditd plugin.
-     apt:
+     package:
        name: audispd-plugins
        state: latest
 
    - name: Install sysstat.
-     apt:
+     package:
        name: sysstat
        state: latest
 
@@ -84,11 +84,7 @@
        path: /etc/audit/rules.d/audit.rules
        line: -w /etc/passwd -p wa -k shadow
        create: yes
-
-   - name: Restart auditd.
-     service:
-       name: auditd
-       state: restarted
+     notify: restart_auditd
 
 
    - name: Disable the verify command for postfix.
