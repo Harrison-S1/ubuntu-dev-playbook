@@ -3,10 +3,7 @@
 - hosts: dev                                                                    
   become: true                                                                  
                                                                                  
-  pre_tasks:                                                                    
-   - name: Set timezone to Europe/London                                        
-     timezone:                                                                  
-      name: Europe/London                                                       
+  pre_tasks:                                                                                                                
  
    - name: install updates (Ubuntu)
      tags: always
@@ -16,6 +13,7 @@
      when: ansible_distribution == "Ubuntu"
 
   roles:
+    - timezone
     - updateos
-#    - firewall
+    - firewall
     - os_hardening                                                                             
