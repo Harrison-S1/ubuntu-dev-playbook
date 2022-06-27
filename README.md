@@ -1,6 +1,6 @@
 # ubuntu-dev-playbook
 Playbook to set up ubuntu server dev environments
-
+```bash
                  .88888888:.
                 88888888.88888.
               .8888888888888888.
@@ -28,4 +28,4 @@ Playbook to set up ubuntu server dev environments
   `'.:::::::::::88888888888.88:::::::::'
         `':::_:' -- '' -'-' `':_::::'`
 
-                              
+```
