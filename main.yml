@@ -9,4 +9,10 @@
       name: Europe/London                                                       
                                                                                  
    - include_role:                                                              
-       name: updateos   
+       name: updateos
+
+   - include_role:                                                              
+       name: firewall
+       
+   - include_role:
+       name: os_hardening
